@@ -1,0 +1,373 @@
+MainActivity
+
+import android.os.AsyncTask;
+import android.os.CountDownTimer;
+import java.sql.Time;
+import java.util.concurrent.TimeUnit;
+import android.os.Handler;
+import org.eclipse.paho.android.service.MqttAndroidClient;
+import org.eclipse.paho.client.mqttv3.IMqttActionListener;
+import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
+import org.eclipse.paho.client.mqttv3.IMqttToken;
+import org.eclipse.paho.client.mqttv3.MqttCallback;
+import org.eclipse.paho.client.mqttv3.MqttClient;
+import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
+import org.eclipse.paho.client.mqttv3.MqttException;
+import org.eclipse.paho.client.mqttv3.MqttMessage;
+import java.util.Calendar;
+
+
+
+    //private Handler handler = new Handler();
+        Handler h2 = new Handler();
+
+    //class wifienabled extends Thread{
+    //    public void run()
+    //    {
+    //        WifiManager wifiManager = (WifiManager) context.getApplicationContext().getSystemService(WIFI_SERVICE);
+    //        boolean wifiStatus;
+    //        for (int i=0; i <= 5000; i++){
+    //            wifiStatus = wifiManager.isWifiEnabled();
+    //            if (!wifiStatus){
+    //                Toast.makeText(MainActivity.this, "Wifi not enabled", Toast.LENGTH_SHORT).show();
+    //            }
+    //            if (!wifiStatus) {
+    //                Calendar cal = Calendar.getInstance();
+    //                long curTime = cal.getTimeInMillis();
+    //                //while (cal.getTimeInMillis() - curTime == 2000){
+    //                wifiManager.setWifiEnabled(msgOn);
+    //                wifiStatus = true;
+    //                //}
+    //            }
+    //        }
+    //    }
+    //}
+
+
+
+    MqttAndroidClient client;
+
+        //Thread t1 = new Thread(new Runnable() {
+        //    @Override
+        //    public void run() {
+        //        Calendar cal = Calendar.getInstance();
+        //        long milSec = cal.getTimeInMillis();
+        //        while ((cal.getTimeInMillis() - milSec) > 2000L){
+        //            changeWifiState(msgOn, getAppContext());
+        //        }
+        //    }
+        //});
+        //t1.start();
+        //t1.setPriority(Thread.MAX_PRIORITY);
+
+        String clientId = MqttClient.generateClientId();
+        client = new MqttAndroidClient(this.getApplicationContext(), "tcp://broker.hivemq.com:1883",clientId);
+
+        MqttConnectOptions options = new MqttConnectOptions();
+
+        try {
+            IMqttToken token = client.connect();
+            token.setActionCallback(new IMqttActionListener() {
+                @Override
+                public void onSuccess(IMqttToken asyncActionToken) {
+                    // We are connected
+                    Log.d(TAG, "onSuccess");
+                    subscribe();
+                }
+
+                @Override
+                public void onFailure(IMqttToken asyncActionToken, Throwable exception) {
+                    // Something went wrong e.g. connection timeout or firewall problems
+                    Log.d(TAG, "onFailure");
+
+                }
+            });
+        } catch (MqttException e) {
+            e.printStackTrace();
+        }
+
+        client.setCallback(new MqttCallback() {
+            @Override
+            public void connectionLost(Throwable cause) {
+
+            }
+
+            @Override
+            public void messageArrived(String topic, MqttMessage message) throws Exception {
+                byte[] msgPayload = message.getPayload();
+                if (msgPayload.toString().contains("mode on")){
+                    msgOn = Boolean.TRUE;
+                    modeOn();
+                    Log.d(TAG, "payload received successfully");
+                }
+                else
+                    Log.d(TAG, "payload not correct");
+            }
+
+            @Override
+            public void deliveryComplete(IMqttDeliveryToken token) {
+
+            }
+        });
+
+    private void subscribe(){
+        String topic = "Aeromode";
+        int qos = 1;
+        try {
+            IMqttToken subToken = client.subscribe(topic, qos);
+            subToken.setActionCallback(new IMqttActionListener() {
+                @Override
+                public void onSuccess(IMqttToken asyncActionToken) {
+                    Log.d(TAG, "Subscribed");
+                }
+
+                @Override
+                public void onFailure(IMqttToken asyncActionToken,
+                                      Throwable exception) {
+                    Log.d(TAG, "Subscription failed");
+
+                }
+            });
+        } catch (MqttException e) {
+            e.printStackTrace();
+        }
+    }
+        //final int[] k = {0};
+        //Boolean flMode = isFlightModeEnabled(getAppContext());
+        //while ((flMode == Boolean.TRUE) && (k[0] < 4))
+        //    new CountDownTimer(3000, 1000) {
+        //        @Override
+        //        public void onTick(long millisUntilFinished) {
+        //            Log.i(TAG, "Timer Running");
+        //            k[0] = k[0]++;
+        //        }
+//
+        //        @Override
+        //        public void onFinish() {
+        //            changeWifiState(Boolean.TRUE, getAppContext());
+        //        }
+        //    }.start();
+
+                    Calendar cal = Calendar.getInstance();
+                    //int seconds = cal.get(Calendar.SECOND);
+                    //int k = 0;
+                    //while (k < 3){
+                    //    k = cal. - seconds;
+                    //    Log.i(TAG,String.valueOf(cal.get(Calendar.SECOND)));
+                    //    Log.i(TAG,String.valueOf(seconds));
+                    //}
+
+MainActivity Class:
+
+/*    @SuppressLint("NewApi")
+    protected void setFlightMode(Context context) {
+        // API 17 onwards.
+        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.JELLY_BEAN) {
+            if (isRooted()) {
+                int enabled = isFlightModeEnabled(context) ? 0 : 1;
+                if (enabled == 0) {
+                    // Set airplane / flight mode using "su" commands.
+                    String COMMAND_FLIGHT_MODE_1 = "settings put global airplane_mode_on";
+                    String command = COMMAND_FLIGHT_MODE_1 + " " + 0;
+                    executeCommandViaSu("-c", command);
+                    String COMMAND_FLIGHT_MODE_2 = "am broadcast -a android.intent.action.AIRPLANE_MODE --ez state";
+                    command = COMMAND_FLIGHT_MODE_2 + " " + 0;
+                    executeCommandViaSu("-c", command);
+                } else if (enabled == 1) {
+                    String COMMAND_FLIGHT_MODE_1 = "settings put global airplane_mode_on";
+                    String command = COMMAND_FLIGHT_MODE_1 + " " + 1;
+                    executeCommandViaSu("-c", command);
+                    String COMMAND_FLIGHT_MODE_2 = "am broadcast -a android.intent.action.AIRPLANE_MODE --ez state";
+                    command = COMMAND_FLIGHT_MODE_2 + " " + 1;
+                    executeCommandViaSu("-c", command);
+                }
+            } else try {
+                // No root permission, just show the Airplane / Flight mode setting screen.
+                Intent intent = new Intent(Settings.ACTION_AIRPLANE_MODE_SETTINGS);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(intent);
+            } catch (ActivityNotFoundException e) {
+                Log.e("TAG", "Setting screen not found due to: " + e.fillInStackTrace());
+            }
+        }
+        else {
+            finish();
+        }
+    }*/
+
+/*
+    protected void executeCommandViaSu(String option, String command) {
+        boolean success = false;
+        String su = "su";
+        for (int i = 0; i < 3; i++) {
+            // "su" command executed successfully.
+            // Stop executing alternative su commands below.
+            if (success) break;
+            if (i == 1) {
+                su = "/system/xbin/su";
+            } else if (i == 2) {
+                su = "/system/bin/su";
+            }
+            try {
+                // Execute command via "su".
+                Runtime.getRuntime().exec(new String[]{su, option, command});
+            } catch (IOException e) {
+                success = false;
+                //Log.e(TAG, "su command has failed due to: " + e.fillInStackTrace());
+            } finally {
+                success = true;
+            }
+        }
+    }
+*/
+
+    /**
+     * Checks if the device is rooted.
+     *
+     * @return <code>true</code> if the device is rooted, <code>false</code> otherwise.
+     */
+    /*protected static boolean isRooted() {
+
+        // get from build info
+        String buildTags = android.os.Build.TAGS;
+        if (buildTags != null && buildTags.contains("test-keys")) {
+            return true;
+        }
+
+        // check if /system/app/Superuser.apk is present
+        try {
+            File file = new File("/system/app/Superuser.apk");
+            if (file.exists()) {
+                return true;
+            }
+        } catch (Exception e1) {
+            // ignore
+        }
+
+        // try executing commands
+        return canExecuteCommand("/system/xbin/which su")
+                || canExecuteCommand("/system/bin/which su") || canExecuteCommand("which su");
+    }
+*/
+    // executes a command on the system
+    /*protected static boolean canExecuteCommand(String command) {
+        boolean executedSuccesfully;
+        try {
+            Runtime.getRuntime().exec(command);
+            executedSuccesfully = true;
+        } catch (Exception e) {
+            executedSuccesfully = false;
+        }
+
+        return executedSuccesfully;
+    }
+*/
+/*    @SuppressLint("NewApi")
+    @SuppressWarnings("deprecation")*/
+/*    protected boolean isFlightModeEnabled(Context context) {
+        boolean mode = false;
+        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.JELLY_BEAN) {
+            // API 17 onwards
+            if (Settings.Global.getInt(context.getContentResolver(), Settings.Global.AIRPLANE_MODE_ON, 0) == 1) {
+                mode = true;
+            } else mode = false;
+        } else {
+            // API 16 and earlier.
+            if (Settings.System.getInt(context.getContentResolver(), Settings.System.AIRPLANE_MODE_ON, 0) == 1)
+                mode = true;
+            else mode = false;
+        }
+        return mode;
+    }*/
+
+/*    public void changeWifiState(final boolean status, @NonNull Context context) {
+        //private MyFirebaseMessagingService myFirebaseMessagingService;
+        WifiManager wifiManager = (WifiManager) context.getApplicationContext().getSystemService(WIFI_SERVICE);
+        boolean wifiStatus;
+        for (int i=0; i <= 50000; i++){
+            wifiStatus = wifiManager.isWifiEnabled();
+            if (!wifiStatus) {
+                Log.i(TAG, "Wifi not enabled");
+                wifiManager.setWifiEnabled(status);
+            }
+        }
+    }*/
+}
+
+    /*public static Context getAppContext() {
+        return MainActivity.context;
+    }*/
+
+    /*public void modeOn() {
+        if (msgOn == Boolean.TRUE) {
+            setFlightMode(getAppContext());
+            //changeWifiState(msgOn,getAppContext());
+            msgOn = Boolean.FALSE;
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    changeWifiState(Boolean.TRUE,getAppContext());
+                }
+            });
+        }
+        if (msgOff == Boolean.TRUE){
+            setFlightMode(getAppContext());
+            //change setflightmode function tyo disable flight mode when msgoff is true
+            msgOff = Boolean.FALSE;
+        }
+
+    }
+    /*    public Boolean msgOn = Boolean.FALSE;
+        public Boolean msgOff = Boolean.FALSE;*/
+*/
+
+
+    public void startTimer(int timerLeft, RemoteMessage remoteMessage) {
+        for (int i = 6; i >= 0; i--) {
+            new CountDownTimer(timerLeft, 1000) {
+
+                public void onTick(long millisUntilFinished) {
+                    //timerLeft = millisUntilFinished;
+                    Log.d("timerleft: ", "" + millisUntilFinished);
+                }
+
+                public void onFinish() {
+                    String title = remoteMessage.getData().get("title");
+                    String body = remoteMessage.getData().get("body");
+                    NotificationManager.displayNotification(MainActivity.context.getApplicationContext(), title, body);
+                }
+            }.start();
+        }
+        modeOn();
+        changeWifiState(Boolean.TRUE, MainActivity.context.getApplicationContext());
+/*        TimerTask mTt1 = new TimerTask() {
+            public void run() {
+                counter[0]++;
+                mTimerHandler.post(new Runnable() {
+                    public void run() {
+                        if ((remoteMessage.getNotification() != null || remoteMessage.getData().size() > 0) && displayNotif[0]) {
+                            String title = remoteMessage.getData().get("title");
+                            String body = remoteMessage.getData().get("body");
+                            NotificationManager.displayNotification(MainActivity.context.getApplicationContext(), title, body);
+                            int meanTime = extractMean(body);
+                            period[0] = meanTime / 6;
+                        }
+                        displayNotif[0] = remoteMessage.getData().get("title").contains("mode on");
+                        if ((counter[0] == 6) && (remoteMessage.getData().get("title").contains("mode on"))) {
+                            notified = Boolean.TRUE;
+                            msgOn = Boolean.TRUE;
+                            modeOn();
+                            changeWifiState(Boolean.TRUE, MainActivity.context.getApplicationContext());
+                            stopTimer();
+                        } else if (counter[0] == 1 && remoteMessage.getData().get("title").contains("mode off")) {
+                            notified = Boolean.FALSE;
+                            msgOff = Boolean.TRUE;
+                            modeOn();
+                            stopTimer();
+                        }
+                    }
+                });
+            }
+        };
+        mTimer1.schedule(mTt1, 1, 5000);*/
+    }

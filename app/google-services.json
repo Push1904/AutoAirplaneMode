@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "586230678263",
+    "firebase_url": "https://fir-setup-e6c1d.firebaseio.com",
+    "project_id": "fir-setup-e6c1d",
+    "storage_bucket": "fir-setup-e6c1d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586230678263:android:69a282e872a0e448",
+        "android_client_info": {
+          "package_name": "com.example.firebasesetup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "586230678263-226ipnanncm7ea5qljkqkhud9bb1i3s7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firebasesetup",
+            "certificate_hash": "ec208588f9d665dc97668f338f5f75991ff62208"
+          }
+        },
+        {
+          "client_id": "586230678263-7jcstri5ict860s762h9deafhifjn56n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firebasesetup",
+            "certificate_hash": "3105dce76761e2eaff723e174284a456433f7f3d"
+          }
+        },
+        {
+          "client_id": "586230678263-l3ulefas107ikocvu0unh6dvkjnv4pir.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBq5fdhEkloqnnvtNdBbkAKccSXPNvfSsE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "586230678263-l3ulefas107ikocvu0unh6dvkjnv4pir.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586230678263:android:fa1317ad7017e113",
+        "android_client_info": {
+          "package_name": "com.example.pushpendra.airplane_mode_system"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "586230678263-4qnabiv4f7cb9vb2cvmflltf91mhgdc1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pushpendra.airplane_mode_system",
+            "certificate_hash": "3105dce76761e2eaff723e174284a456433f7f3d"
+          }
+        },
+        {
+          "client_id": "586230678263-l3ulefas107ikocvu0unh6dvkjnv4pir.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBq5fdhEkloqnnvtNdBbkAKccSXPNvfSsE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "586230678263-l3ulefas107ikocvu0unh6dvkjnv4pir.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

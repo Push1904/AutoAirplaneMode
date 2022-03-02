@@ -1,0 +1,438 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.firebasesetup"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+11-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:6:5-76
+11-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:6:22-73
+12    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+12-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:7:5-76
+12-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:7:22-73
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:8:5-79
+13-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:8:22-76
+14    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+14-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:9:5-82
+14-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:9:22-79
+15    <uses-permission android:name="android.permission.WAKE_LOCK" />
+15-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:10:5-68
+15-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:10:22-65
+16    <uses-permission android:name="android.permission.INTERNET" />
+16-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:11:5-66
+16-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:11:22-64
+17    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+17-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:12:5-74
+17-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:12:22-72
+18
+19    <uses-permission-sdk-23 android:name="android.permission.WRITE_SETTINGS" />
+19-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:14:5-80
+19-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:14:29-77
+20
+21    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+21-->[com.google.android.gms:play-services-measurement:16.4.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\bc0726edab6dafcd5df3c214e479e012\play-services-measurement-16.4.0\AndroidManifest.xml:26:5-110
+21-->[com.google.android.gms:play-services-measurement:16.4.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\bc0726edab6dafcd5df3c214e479e012\play-services-measurement-16.4.0\AndroidManifest.xml:26:22-107
+22    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+22-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:25:5-81
+22-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:25:22-78
+23
+24    <application
+24-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:16:5-48:19
+25        android:allowBackup="true"
+25-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:17:9-35
+26        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+26-->[com.android.support:support-compat:28.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\083810096f2ed45d25acda3d599e2fdf\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+27        android:debuggable="true"
+28        android:icon="@mipmap/ic_launcher"
+28-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:18:9-43
+29        android:label="AUTO AIRPLANE MODE"
+29-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:19:9-43
+30        android:roundIcon="@mipmap/ic_launcher_round"
+30-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:20:9-54
+31        android:supportsRtl="true"
+31-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:21:9-35
+32        android:testOnly="true"
+33        android:theme="@style/AppTheme" >
+33-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:22:9-40
+34        <activity android:name="com.example.firebasesetup.MainActivity" >
+34-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:25:9-36:20
+34-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:25:19-47
+35            <intent-filter>
+35-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:26:13-30:29
+36                <action android:name="android.intent.action.MAIN" />
+36-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:27:17-69
+36-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:27:25-66
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:29:17-77
+38-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:29:27-74
+39            </intent-filter>
+40            <intent-filter>
+40-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:31:13-35:29
+41                <action android:name="com.ttnd.fcmtest.OPEN_ACTIVITY_1" />
+41-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:32:17-75
+41-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:32:25-72
+42
+43                <category android:name="android.intent.category.DEFAUL" />
+43-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:34:17-75
+43-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:34:27-72
+44            </intent-filter>
+45        </activity>
+46
+47        <service
+47-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:38:9-46:19
+48            android:name="com.example.firebasesetup.MyFirebaseMessagingService"
+48-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:39:13-55
+49            android:stopWithTask="false" >
+49-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:40:13-41
+50            <intent-filter>
+50-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:42:13-45:29
+51                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+51-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:43:17-78
+51-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:43:25-75
+52                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+52-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:44:17-80
+52-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:44:25-77
+53            </intent-filter>
+54        </service>
+55        <service android:name="org.eclipse.paho.android.service.MqttService" />
+55-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:47:9-79
+55-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:47:18-77
+56        <!--
+57             FirebaseMessagingService performs security checks at runtime,
+58             but set to not exported to explicitly avoid allowing another app to call it.
+59        -->
+60        <service
+60-->[com.google.firebase:firebase-messaging:18.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\2240b5522349a476a7277a946d1bb750\firebase-messaging-18.0.0\AndroidManifest.xml:28:9-34:19
+61            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+61-->[com.google.firebase:firebase-messaging:18.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\2240b5522349a476a7277a946d1bb750\firebase-messaging-18.0.0\AndroidManifest.xml:29:13-82
+62            android:exported="false" >
+62-->[com.google.firebase:firebase-messaging:18.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\2240b5522349a476a7277a946d1bb750\firebase-messaging-18.0.0\AndroidManifest.xml:30:13-37
+63            <intent-filter android:priority="-500" >
+63-->[com.google.firebase:firebase-messaging:18.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\2240b5522349a476a7277a946d1bb750\firebase-messaging-18.0.0\AndroidManifest.xml:31:13-33:29
+63-->[com.google.firebase:firebase-messaging:18.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\2240b5522349a476a7277a946d1bb750\firebase-messaging-18.0.0\AndroidManifest.xml:31:28-51
+64                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+64-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:43:17-78
+64-->C:\Users\psengar\AndroidStudioProjects\AndroidStudioProjects\FirebaseSetup\app\src\main\AndroidManifest.xml:43:25-75
+65            </intent-filter>
+66        </service>
+67        <service
+67-->[com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\aae3fd2878e843e0214cf697ed6ce00b\play-services-measurement-api-16.4.0\AndroidManifest.xml:27:9-33:19
+68            android:name="com.google.firebase.components.ComponentDiscoveryService"
+68-->[com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\aae3fd2878e843e0214cf697ed6ce00b\play-services-measurement-api-16.4.0\AndroidManifest.xml:28:13-84
+69            android:exported="false" >
+69-->[com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\aae3fd2878e843e0214cf697ed6ce00b\play-services-measurement-api-16.4.0\AndroidManifest.xml:29:13-37
+70            <meta-data
+70-->[com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\aae3fd2878e843e0214cf697ed6ce00b\play-services-measurement-api-16.4.0\AndroidManifest.xml:30:13-32:85
+71                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+71-->[com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\aae3fd2878e843e0214cf697ed6ce00b\play-services-measurement-api-16.4.0\AndroidManifest.xml:31:17-139
+72                android:value="com.google.firebase.components.ComponentRegistrar" />
+72-->[com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\aae3fd2878e843e0214cf697ed6ce00b\play-services-measurement-api-16.4.0\AndroidManifest.xml:32:17-82
+73            <meta-data
+73-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\f8b29bc964d2b8409266f15175a8cfbc\firebase-iid-18.0.0\AndroidManifest.xml:32:13-34:85
+74                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+74-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\f8b29bc964d2b8409266f15175a8cfbc\firebase-iid-18.0.0\AndroidManifest.xml:33:17-96
+75                android:value="com.google.firebase.components.ComponentRegistrar" />
+75-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\f8b29bc964d2b8409266f15175a8cfbc\firebase-iid-18.0.0\AndroidManifest.xml:34:17-82
+76            <meta-data
+76-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\c76be17383d8257f27548cebdabbd68a\firebase-auth-17.0.0\AndroidManifest.xml:36:13-38:85
+77                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+77-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\c76be17383d8257f27548cebdabbd68a\firebase-auth-17.0.0\AndroidManifest.xml:37:17-109
+78                android:value="com.google.firebase.components.ComponentRegistrar" />
+78-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\c76be17383d8257f27548cebdabbd68a\firebase-auth-17.0.0\AndroidManifest.xml:38:17-82
+79            <meta-data
+79-->[com.google.firebase:firebase-database:17.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\3122a1e35706dc693188058e4d31b261\firebase-database-17.0.0\AndroidManifest.xml:30:13-32:85
+80                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+80-->[com.google.firebase:firebase-database:17.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\3122a1e35706dc693188058e4d31b261\firebase-database-17.0.0\AndroidManifest.xml:31:17-109
+81                android:value="com.google.firebase.components.ComponentRegistrar" />
+81-->[com.google.firebase:firebase-database:17.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\3122a1e35706dc693188058e4d31b261\firebase-database-17.0.0\AndroidManifest.xml:32:17-82
+82        </service>
+83
+84        <receiver
+84-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\f8b29bc964d2b8409266f15175a8cfbc\firebase-iid-18.0.0\AndroidManifest.xml:37:9-44:20
+85            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+85-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\f8b29bc964d2b8409266f15175a8cfbc\firebase-iid-18.0.0\AndroidManifest.xml:38:13-78
+86            android:exported="true"
+86-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\f8b29bc964d2b8409266f15175a8cfbc\firebase-iid-18.0.0\AndroidManifest.xml:39:13-36
+87            android:permission="com.google.android.c2dm.permission.SEND" >
+87-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\f8b29bc964d2b8409266f15175a8cfbc\firebase-iid-18.0.0\AndroidManifest.xml:40:13-73
+88            <intent-filter>
+88-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\f8b29bc964d2b8409266f15175a8cfbc\firebase-iid-18.0.0\AndroidManifest.xml:41:13-43:29
+89                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+89-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\f8b29bc964d2b8409266f15175a8cfbc\firebase-iid-18.0.0\AndroidManifest.xml:42:17-81
+89-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\f8b29bc964d2b8409266f15175a8cfbc\firebase-iid-18.0.0\AndroidManifest.xml:42:25-78
+90            </intent-filter>
+91        </receiver>
+92
+93        <activity
+93-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\c76be17383d8257f27548cebdabbd68a\firebase-auth-17.0.0\AndroidManifest.xml:24:9-31:50
+94            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+94-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\c76be17383d8257f27548cebdabbd68a\firebase-auth-17.0.0\AndroidManifest.xml:25:13-85
+95            android:excludeFromRecents="true"
+95-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\c76be17383d8257f27548cebdabbd68a\firebase-auth-17.0.0\AndroidManifest.xml:26:13-46
+96            android:exported="true"
+96-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\c76be17383d8257f27548cebdabbd68a\firebase-auth-17.0.0\AndroidManifest.xml:27:13-36
+97            android:launchMode="singleTask"
+97-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\c76be17383d8257f27548cebdabbd68a\firebase-auth-17.0.0\AndroidManifest.xml:28:13-44
+98            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+98-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\c76be17383d8257f27548cebdabbd68a\firebase-auth-17.0.0\AndroidManifest.xml:29:13-102
+99            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+99-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\c76be17383d8257f27548cebdabbd68a\firebase-auth-17.0.0\AndroidManifest.xml:30:13-72
+100
+101        <receiver
+101-->[com.google.android.gms:play-services-measurement:16.4.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\bc0726edab6dafcd5df3c214e479e012\play-services-measurement-16.4.0\AndroidManifest.xml:29:9-33:20
+102            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+102-->[com.google.android.gms:play-services-measurement:16.4.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\bc0726edab6dafcd5df3c214e479e012\play-services-measurement-16.4.0\AndroidManifest.xml:30:13-85
+103            android:enabled="true"
+103-->[com.google.android.gms:play-services-measurement:16.4.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\bc0726edab6dafcd5df3c214e479e012\play-services-measurement-16.4.0\AndroidManifest.xml:31:13-35
+104            android:exported="false" >
+104-->[com.google.android.gms:play-services-measurement:16.4.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\bc0726edab6dafcd5df3c214e479e012\play-services-measurement-16.4.0\AndroidManifest.xml:32:13-37
+105        </receiver>
+106        <receiver
+106-->[com.google.android.gms:play-services-measurement:16.4.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\bc0726edab6dafcd5df3c214e479e012\play-services-measurement-16.4.0\AndroidManifest.xml:34:9-42:20
+107            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+107-->[com.google.android.gms:play-services-measurement:16.4.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\bc0726edab6dafcd5df3c214e479e012\play-services-measurement-16.4.0\AndroidManifest.xml:35:13-100
+108            android:enabled="true"
+108-->[com.google.android.gms:play-services-measurement:16.4.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\bc0726edab6dafcd5df3c214e479e012\play-services-measurement-16.4.0\AndroidManifest.xml:36:13-35
+109            android:exported="true"
+109-->[com.google.android.gms:play-services-measurement:16.4.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\bc0726edab6dafcd5df3c214e479e012\play-services-measurement-16.4.0\AndroidManifest.xml:37:13-36
+110            android:permission="android.permission.INSTALL_PACKAGES" >
+110-->[com.google.android.gms:play-services-measurement:16.4.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\bc0726edab6dafcd5df3c214e479e012\play-services-measurement-16.4.0\AndroidManifest.xml:38:13-69
+111            <intent-filter>
+111-->[com.google.android.gms:play-services-measurement:16.4.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\bc0726edab6dafcd5df3c214e479e012\play-services-measurement-16.4.0\AndroidManifest.xml:39:13-41:29
+112                <action android:name="com.android.vending.INSTALL_REFERRER" />
+112-->[com.google.android.gms:play-services-measurement:16.4.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\bc0726edab6dafcd5df3c214e479e012\play-services-measurement-16.4.0\AndroidManifest.xml:40:17-79
+112-->[com.google.android.gms:play-services-measurement:16.4.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\bc0726edab6dafcd5df3c214e479e012\play-services-measurement-16.4.0\AndroidManifest.xml:40:25-76
+113            </intent-filter>
+114        </receiver>
+115
+116        <service
+116-->[com.google.android.gms:play-services-measurement:16.4.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\bc0726edab6dafcd5df3c214e479e012\play-services-measurement-16.4.0\AndroidManifest.xml:44:9-47:40
+117            android:name="com.google.android.gms.measurement.AppMeasurementService"
+117-->[com.google.android.gms:play-services-measurement:16.4.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\bc0726edab6dafcd5df3c214e479e012\play-services-measurement-16.4.0\AndroidManifest.xml:45:13-84
+118            android:enabled="true"
+118-->[com.google.android.gms:play-services-measurement:16.4.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\bc0726edab6dafcd5df3c214e479e012\play-services-measurement-16.4.0\AndroidManifest.xml:46:13-35
+119            android:exported="false" />
+119-->[com.google.android.gms:play-services-measurement:16.4.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\bc0726edab6dafcd5df3c214e479e012\play-services-measurement-16.4.0\AndroidManifest.xml:47:13-37
+120        <service
+120-->[com.google.android.gms:play-services-measurement:16.4.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\bc0726edab6dafcd5df3c214e479e012\play-services-measurement-16.4.0\AndroidManifest.xml:48:9-52:72
+121            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+121-->[com.google.android.gms:play-services-measurement:16.4.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\bc0726edab6dafcd5df3c214e479e012\play-services-measurement-16.4.0\AndroidManifest.xml:49:13-87
+122            android:enabled="true"
+122-->[com.google.android.gms:play-services-measurement:16.4.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\bc0726edab6dafcd5df3c214e479e012\play-services-measurement-16.4.0\AndroidManifest.xml:50:13-35
+123            android:exported="false"
+123-->[com.google.android.gms:play-services-measurement:16.4.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\bc0726edab6dafcd5df3c214e479e012\play-services-measurement-16.4.0\AndroidManifest.xml:51:13-37
+124            android:permission="android.permission.BIND_JOB_SERVICE" />
+124-->[com.google.android.gms:play-services-measurement:16.4.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\bc0726edab6dafcd5df3c214e479e012\play-services-measurement-16.4.0\AndroidManifest.xml:52:13-69
+125
+126        <provider
+126-->[com.google.firebase:firebase-common:17.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\72082e6b5302abea9f9045f082b2160b\firebase-common-17.0.0\AndroidManifest.xml:12:9-16:39
+127            android:name="com.google.firebase.provider.FirebaseInitProvider"
+127-->[com.google.firebase:firebase-common:17.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\72082e6b5302abea9f9045f082b2160b\firebase-common-17.0.0\AndroidManifest.xml:13:13-77
+128            android:authorities="com.example.firebasesetup.firebaseinitprovider"
+128-->[com.google.firebase:firebase-common:17.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\72082e6b5302abea9f9045f082b2160b\firebase-common-17.0.0\AndroidManifest.xml:14:13-72
+129            android:exported="false"
+129-->[com.google.firebase:firebase-common:17.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\72082e6b5302abea9f9045f082b2160b\firebase-common-17.0.0\AndroidManifest.xml:15:13-37
+130            android:initOrder="100" />
+130-->[com.google.firebase:firebase-common:17.0.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\72082e6b5302abea9f9045f082b2160b\firebase-common-17.0.0\AndroidManifest.xml:16:13-36
+131
+132        <activity
+132-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\9b5186f5dde0d45ec7a4621182834dc5\play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+133            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+133-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\9b5186f5dde0d45ec7a4621182834dc5\play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+134            android:exported="false"
+134-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\9b5186f5dde0d45ec7a4621182834dc5\play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+135            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+135-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\9b5186f5dde0d45ec7a4621182834dc5\play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+136
+137        <meta-data
+137-->[com.google.android.gms:play-services-basement:16.2.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\af7cf694865fbc419e9b418ffded0167\play-services-basement-16.2.0\AndroidManifest.xml:23:9-25:69
+138            android:name="com.google.android.gms.version"
+138-->[com.google.android.gms:play-services-basement:16.2.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\af7cf694865fbc419e9b418ffded0167\play-services-basement-16.2.0\AndroidManifest.xml:24:13-58
+139            android:value="@integer/google_play_services_version" />
+139-->[com.google.android.gms:play-services-basement:16.2.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\af7cf694865fbc419e9b418ffded0167\play-services-basement-16.2.0\AndroidManifest.xml:25:13-66
+140
+141        <provider
+141-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:28:9-34:35
+142            android:name="androidx.work.impl.WorkManagerInitializer"
+142-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:29:13-69
+143            android:authorities="com.example.firebasesetup.workmanager-init"
+143-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:30:13-68
+144            android:directBootAware="false"
+144-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:31:13-44
+145            android:exported="false"
+145-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:32:13-37
+146            android:multiprocess="true" />
+146-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:33:13-40
+147
+148        <service
+148-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:36:9-41:35
+149            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+149-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:37:13-88
+150            android:directBootAware="false"
+150-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:38:13-44
+151            android:enabled="@bool/enable_system_alarm_service_default"
+151-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:39:13-72
+152            android:exported="false" />
+152-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:40:13-37
+153        <service
+153-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:42:9-48:35
+154            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+154-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:43:13-84
+155            android:directBootAware="false"
+155-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:44:13-44
+156            android:enabled="@bool/enable_system_job_service_default"
+156-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:45:13-70
+157            android:exported="true"
+157-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:46:13-36
+158            android:permission="android.permission.BIND_JOB_SERVICE" />
+158-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:47:13-69
+159
+160        <receiver
+160-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:50:9-55:35
+161            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+161-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:51:13-88
+162            android:directBootAware="false"
+162-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:52:13-44
+163            android:enabled="true"
+163-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:53:13-35
+164            android:exported="false" />
+164-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:54:13-37
+165        <receiver
+165-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:56:9-66:20
+166            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+166-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:57:13-106
+167            android:directBootAware="false"
+167-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:58:13-44
+168            android:enabled="false"
+168-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:59:13-36
+169            android:exported="false" >
+169-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:60:13-37
+170            <intent-filter>
+170-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:62:13-65:29
+171                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+171-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:63:17-87
+171-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:63:25-84
+172                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+172-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:64:17-90
+172-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:64:25-87
+173            </intent-filter>
+174        </receiver>
+175        <receiver
+175-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:67:9-77:20
+176            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+176-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:68:13-104
+177            android:directBootAware="false"
+177-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:69:13-44
+178            android:enabled="false"
+178-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:70:13-36
+179            android:exported="false" >
+179-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:71:13-37
+180            <intent-filter>
+180-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:73:13-76:29
+181                <action android:name="android.intent.action.BATTERY_OKAY" />
+181-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:74:17-77
+181-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:74:25-74
+182                <action android:name="android.intent.action.BATTERY_LOW" />
+182-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:75:17-76
+182-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:75:25-73
+183            </intent-filter>
+184        </receiver>
+185        <receiver
+185-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:78:9-88:20
+186            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+186-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:79:13-104
+187            android:directBootAware="false"
+187-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:80:13-44
+188            android:enabled="false"
+188-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:81:13-36
+189            android:exported="false" >
+189-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:82:13-37
+190            <intent-filter>
+190-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:84:13-87:29
+191                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+191-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:85:17-83
+191-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:85:25-80
+192                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+192-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:86:17-82
+192-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:86:25-79
+193            </intent-filter>
+194        </receiver>
+195        <receiver
+195-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:89:9-98:20
+196            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+196-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:90:13-103
+197            android:directBootAware="false"
+197-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:91:13-44
+198            android:enabled="false"
+198-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:92:13-36
+199            android:exported="false" >
+199-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:93:13-37
+200            <intent-filter>
+200-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:95:13-97:29
+201                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+201-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:96:17-79
+201-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:96:25-76
+202            </intent-filter>
+203        </receiver>
+204        <receiver
+204-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:99:9-110:20
+205            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+205-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:100:13-88
+206            android:directBootAware="false"
+206-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:101:13-44
+207            android:enabled="false"
+207-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:102:13-36
+208            android:exported="false" >
+208-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:103:13-37
+209            <intent-filter>
+209-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:105:13-109:29
+210                <action android:name="android.intent.action.BOOT_COMPLETED" />
+210-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:106:17-79
+210-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:106:25-76
+211                <action android:name="android.intent.action.TIME_SET" />
+211-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:107:17-73
+211-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:107:25-70
+212                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+212-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:108:17-81
+212-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:108:25-78
+213            </intent-filter>
+214        </receiver>
+215        <receiver
+215-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:111:9-120:20
+216            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+216-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:112:13-99
+217            android:directBootAware="false"
+217-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:113:13-44
+218            android:enabled="@bool/enable_system_alarm_service_default"
+218-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:114:13-72
+219            android:exported="false" >
+219-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:115:13-37
+220            <intent-filter>
+220-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:117:13-119:29
+221                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+221-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:118:17-98
+221-->[android.arch.work:work-runtime:1.0.1] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\263430fc0c60020fecf3618e905696a2\work-runtime-1.0.1\AndroidManifest.xml:118:25-95
+222            </intent-filter>
+223        </receiver>
+224
+225        <provider
+225-->[android.arch.lifecycle:extensions:1.1.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\82dbc551c7212ca10e41bacaf9d8e57f\extensions-1.1.0\AndroidManifest.xml:23:9-27:43
+226            android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"
+226-->[android.arch.lifecycle:extensions:1.1.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\82dbc551c7212ca10e41bacaf9d8e57f\extensions-1.1.0\AndroidManifest.xml:24:13-83
+227            android:authorities="com.example.firebasesetup.lifecycle-trojan"
+227-->[android.arch.lifecycle:extensions:1.1.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\82dbc551c7212ca10e41bacaf9d8e57f\extensions-1.1.0\AndroidManifest.xml:25:13-68
+228            android:exported="false"
+228-->[android.arch.lifecycle:extensions:1.1.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\82dbc551c7212ca10e41bacaf9d8e57f\extensions-1.1.0\AndroidManifest.xml:26:13-37
+229            android:multiprocess="true" />
+229-->[android.arch.lifecycle:extensions:1.1.0] C:\Users\psengar\.gradle\caches\transforms-2\files-2.1\82dbc551c7212ca10e41bacaf9d8e57f\extensions-1.1.0\AndroidManifest.xml:27:13-40
+230    </application>
+231
+232</manifest>

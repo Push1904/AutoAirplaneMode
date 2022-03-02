@@ -1,0 +1,18 @@
+com/example/firebasesetup/MainActivity.java
+ com.example.firebasesetup.MainActivity
+ com.example.firebasesetup.MainActivity$1
+ com.example.firebasesetup.MainActivity$2
+com/example/firebasesetup/BuildConfig.java
+ com.example.firebasesetup.BuildConfig
+com/example/firebasesetup/ProfileActivity.java
+ com.example.firebasesetup.ProfileActivity
+ com.example.firebasesetup.ProfileActivity$1
+com/example/firebasesetup/MyFirebaseMessagingService.java
+ com.example.firebasesetup.MyFirebaseMessagingService
+ com.example.firebasesetup.MyFirebaseMessagingService$1
+com/example/firebasesetup/NotificationManager.java
+ com.example.firebasesetup.NotificationManager
+com/example/firebasesetup/DatabaseAccess.java
+ com.example.firebasesetup.DatabaseAccess
+com/example/firebasesetup/DatabaseOpenHelper.java
+ com.example.firebasesetup.DatabaseOpenHelper
